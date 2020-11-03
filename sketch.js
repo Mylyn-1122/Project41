@@ -4,7 +4,7 @@ const Bodies = Matter.Bodies;
 
 var maxDrop = 100;
 var Drop = [];
-var thunder1, thunder2, thunder3, thunder4;
+var thunder1, thunder2, thunder3, thunder4, image;
 
 var sprite;
 var thunderFrame = 0;
@@ -14,12 +14,15 @@ function preload(){
     thunder2 = loadImage("images/thunderbolt/2.png")
     thunder3 = loadImage("images/thunderbolt/3.png")
     thunder4 = loadImage("images/thunderbolt/4.png")
+    
 }
 
 function setup(){
    canvas = createCanvas(300, 600);
    engine = Engine.create();
    world = engine.world;
+
+   
 
    //for (var i = 0; i < maxDrop; i++){
     //Drop.push(new drop(random( 0, 300), random(0, 100)))
