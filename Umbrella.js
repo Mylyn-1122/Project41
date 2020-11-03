@@ -5,7 +5,7 @@ class umbrella{
         }
         this.body = Matter.Bodies.circle(x, y, 50, options);
         World.add(world, this.body);
-        this.image = loadimage(images/WalkingFrame/walking_1.png);
+        this.image = loadImage(images/WalkingFrame/walking_1.png);
     }
 
     display(){
